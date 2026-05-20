@@ -31,6 +31,10 @@ body, #root {
   min-height: 100vh;
   min-height: 100dvh;
   background-color: var(--white-color);
+  overflow: hidden;
+  background-image: url("./assets/geometry.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
@@ -38,5 +42,15 @@ main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  border: 1px solid red;
+  overflow-y: auto;
+}
+main header {
+  border: 1px solid red;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+main footer {
   border: 1px solid red;
 }/*# sourceMappingURL=index.css.map */

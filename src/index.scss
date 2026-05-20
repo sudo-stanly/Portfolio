@@ -32,6 +32,11 @@ html, body, #root{
         min-height: 100vh;
         min-height: 100dvh;
         background-color: var(--white-color);
+
+        overflow: hidden;
+        background-image: url('./assets/geometry.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
@@ -43,4 +48,28 @@ main{
     flex-grow: 1;
 
     border: 1px solid red;
+
+    overflow-y: auto;
+
+    header{
+        border: 1px solid red;
+
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    section{
+        .section1{
+
+        }
+    }
+
+    footer{
+        border: 1px solid red;
+    }
+
+    
 }
+
+

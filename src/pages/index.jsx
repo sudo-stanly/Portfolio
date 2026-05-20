@@ -5,12 +5,24 @@ export default function IndexPage(){
         
 
         <main>
-            main
+            
+            <header>
+                header
+            </header>
 
-            {/* <section>
-                section
-            </section> */}
+        
+            <section className="section1">
+                section 1
+            </section>
+
+
+            <footer>
+                footer
+            </footer>
+
         </main>
+
+        
 
        
 
