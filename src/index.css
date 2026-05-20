@@ -1,6 +1,42 @@
 :root {
-  --black: #000000;
-  --white: #FFFFFF;
-  --primary_red: #EF3054;
-  --secondary_red: #AD0003;
+  --primary-color: #FFFFFF;
+  --secondary-color: #d23331;
+  --success: #0CCE6B;
+  --warning: #F8C537;
+  --error: #ED254E;
+  --light-grey: #312F2F;
+  --mid-grey: #22181C;
+  --dark-grey: #0C0C0C;
+  --dark: #000000;
+  --shadow: 0px 2px 6px 0px rgba(136, 136, 136, 0.331);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+  font-weight: 500;
+  box-sizing: border-box;
+  font-family: "istokweb-regular", "Inter";
+}
+
+html, body, #root {
+  min-height: 100%;
+  min-height: 100dvh;
+}
+
+body, #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: var(--white-color);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 1px solid red;
 }/*# sourceMappingURL=index.css.map */
