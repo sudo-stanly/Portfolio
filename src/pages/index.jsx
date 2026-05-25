@@ -35,5 +35,23 @@ export default function IndexPage(){
         </div>
         */}
 
+        
+
+        <main>
+            <div className="hero">
+                    hero section
+            </div>
+
+            <div className="divider"></div>
+            <section>
+                section
+
+                
+
+            </section>
+
+
+        </main>
+
     </>);
 }
