@@ -5,7 +5,7 @@ export default function IndexPage(){
         
 
        
-
+{/* 
         <div className="img1">
             <div className="heading">Fixed</div>
         </div>
@@ -33,7 +33,7 @@ export default function IndexPage(){
         <div className="img3">
             <div className="heading">Fixed</div>
         </div>
-       
+        */}
 
     </>);
 }

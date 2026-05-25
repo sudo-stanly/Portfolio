@@ -48,10 +48,10 @@ html, body, #root{
 
     // overflow: hidden;
 
-    line-height: 180%;
-    background-color: #323232;
-    color: #fff;
-    text-align: center;
+    // line-height: 180%;
+    // background-color: #323232;
+    // color: #fff;
+    // text-align: center;
 }
     body, #root{
         display: flex;
@@ -63,54 +63,54 @@ html, body, #root{
 
 
 
-.img1{
-    background: url('./assets/sample-img1.webp');
-    min-height: 100%;
-}
+// .img1{
+//     background: url('./assets/sample-img1.webp');
+//     min-height: 100%;
+// }
 
-.img2{
-    background: url('./assets/sample-img2.webp');
-    min-height: 60%;
-}
+// .img2{
+//     background: url('./assets/sample-img2.webp');
+//     min-height: 60%;
+// }
 
-.img3{
-    background: url('./assets/sample-img3.png');
-    min-height: 100%;
-}
+// .img3{
+//     background: url('./assets/sample-img3.png');
+//     min-height: 100%;
+// }
 
-.img1, .img2, .img3{
-    position: relative;
-    opacity: .85;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
+// .img1, .img2, .img3{
+//     position: relative;
+//     opacity: .85;
+//     background-position: center;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+// }
 
-section{
-    padding: 50px 80px;
-}
-.heading{
-    position: absolute;
-    top: 50%;
-    font-size: 650%;
-    text-shadow: 0 0 15px #000;
-    width: 100%;
-    text-transform: uppercase;
-    letter-spacing: 8px;
-}
+// section{
+//     padding: 50px 80px;
+// }
+// .heading{
+//     position: absolute;
+//     top: 50%;
+//     font-size: 650%;
+//     text-shadow: 0 0 15px #000;
+//     width: 100%;
+//     text-transform: uppercase;
+//     letter-spacing: 8px;
+// }
 
-@media(max-width: 768px){
-    .heading{
-        font-size: 250%;
-    }
-    h1{
-        font-size: 95%;
-    }
-    p{
-        font-size: 90%;
-    }
-}
+// @media(max-width: 768px){
+//     .heading{
+//         font-size: 250%;
+//     }
+//     h1{
+//         font-size: 95%;
+//     }
+//     p{
+//         font-size: 90%;
+//     }
+// }
 
 
 
