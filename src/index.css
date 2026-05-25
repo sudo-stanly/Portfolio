@@ -54,30 +54,22 @@ main {
   min-height: 100dvh;
 }
 main .hero {
-  position: sticky;
+  position: relative;
   top: 0;
   height: 100vh;
   border: 1px solid black;
   display: flex;
   width: 100%;
+  overflow: hidden;
 }
-main .hero .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+main .hero .CARD {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  transform: translateY(205px);
 }
-main .hero .box:nth-child(1) {
-  border: 1px solid red;
-  flex-grow: 1;
-}
-main .hero .box:nth-child(2) {
-  width: 50%;
-}
-main .hero .box:nth-child(2) .CARD {
-  align-self: flex-end;
-  width: 100%;
-}
-main .hero .box:nth-child(2) .CARD img {
+main .hero .CARD img {
   width: 100%;
   height: 100%;
 }
