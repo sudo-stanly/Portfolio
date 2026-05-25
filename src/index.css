@@ -62,17 +62,24 @@ main .hero {
   width: 100%;
 }
 main .hero .box {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main .hero .box:nth-child(1) {
+  border: 1px solid red;
   flex-grow: 1;
 }
 main .hero .box:nth-child(2) {
   width: 50%;
-  display: flex;
+}
+main .hero .box:nth-child(2) .CARD {
+  align-self: flex-end;
+  width: 100%;
+}
+main .hero .box:nth-child(2) .CARD img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1023px) {

@@ -45,10 +45,9 @@ export default function IndexPage(){
                     </div>
 
                     <div className="box">
-                        {/* <div className="CARD">
-                            <img src={stanImg} alt="Stan" />
-                        </div> */}
-                        box
+                        <div className="CARD">
+                            <img src={stanImg} alt="stan" />
+                        </div>
                     </div>
             </div>
 
