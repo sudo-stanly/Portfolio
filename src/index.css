@@ -47,4 +47,36 @@ body, #root {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+main .hero {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+}
+main .hero .box {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .hero .box:nth-child(1) {
+  flex-grow: 1;
+}
+main .hero .box:nth-child(2) {
+  width: 50%;
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  main .hero .box:nth-child(2) {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

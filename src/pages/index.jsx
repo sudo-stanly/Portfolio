@@ -1,3 +1,4 @@
+import stanImg from '../assets/stan.png';
 
 export default function IndexPage(){
     return(<>
@@ -39,7 +40,16 @@ export default function IndexPage(){
 
         <main>
             <div className="hero">
-                    hero section
+                    <div className="box">
+                        introduction
+                    </div>
+
+                    <div className="box">
+                        {/* <div className="CARD">
+                            <img src={stanImg} alt="Stan" />
+                        </div> */}
+                        box
+                    </div>
             </div>
 
             <div className="divider"></div>

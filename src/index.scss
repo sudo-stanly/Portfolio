@@ -62,9 +62,66 @@ html, body, #root{
 
 
 
-main{
-    
+main {
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    .hero {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        border: 1px solid black;
+        display: flex;
+        width: 100%;
+
+        .box {
+            border: 1px solid red;
+            // padding: 12px;
+            display: flex;       
+            align-items: center; 
+            justify-content: center;
+
+            &:nth-child(1) {
+                flex-grow: 1;
+            }
+
+            &:nth-child(2) {
+                width: 50%;
+
+                display: flex;
+                
+                // .CARD {
+                //     border: 1px solid blue;
+                //     // padding: 12px;
+                //     width: 300%; 
+                //     max-width: 800px; 
+                //     display: flex;
+                //     justify-content: center;
+                //     align-self: flex-end;
+
+                //     img {
+                //         width: 100%;     
+                //         height: auto; 
+                //         object-fit: contain;
+                //     }
+                // }
+            }
+        }
+    }
 }
+
+@media(max-width: 1023px){
+    main{
+        .hero{
+            .box{
+                &:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 
 
 
