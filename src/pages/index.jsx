@@ -40,6 +40,10 @@ export default function IndexPage(){
 
         <main>
             <div className="hero">
+                    <div className="BOX">
+                        
+                    </div>
+
                     <div className="CARD">
                         <img src={stanImg} alt="stan" />
                     </div>

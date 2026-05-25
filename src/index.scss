@@ -77,6 +77,9 @@ main {
         overflow: hidden;
 
         .CARD{
+            animation: slide_up 0.5s ease-in;
+
+
             position: absolute;
             right: 0;
             bottom: 0;
@@ -87,28 +90,51 @@ main {
 
             // position: relative;
 
-            width: 65%;
-            transform: translateY(205px);
+            width: 900px;
+            transform: translateY(180px);
+            transition: 0.3s ease;
             
             img{
+                
                 width: 100%;
-                height: 100%;
+                height: auto;
             }
         }
     }
 }
+@keyframes slide_up{
+    from{
+        transform: translateY(100%);
+        opacity: 30%;
+    }
+    to{
+        transform: translateY(180px);
+        opacity: 100%;
+    }
+}
+
+
 
 @media(max-width: 1023px){
     main{
         .hero{
-            .box{
-                &:nth-child(2){
-                    display: none;
-                }
+            .CARD{
+                // visibility: hidden;
+                // transform: translateY(100%);
+
+                opacity: 0;
             }
         }
     }
 }
+// @keyframes fade_out{
+//     from{
+//         opacity: 0;
+//     }
+//     to{
+//         opacity: 100%;
+//     }
+// }
 
 
 
