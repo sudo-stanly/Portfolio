@@ -23,6 +23,10 @@
 html, body, #root {
   height: 100%;
   height: 100dvh;
+  line-height: 180%;
+  background-color: #323232;
+  color: #fff;
+  text-align: center;
 }
 
 body, #root {
@@ -30,10 +34,27 @@ body, #root {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  background-color: var(--white-color);
-  background-image: url("./assets/polygon-background-web.jpg") fixed;
 }
 
-.margin {
-  margin: 75% 0;
+.img1 {
+  background: url("./assets/sample-img1.webp");
+  min-height: 100%;
+}
+
+.img2 {
+  background: url("./assets/sample-img2.webp");
+  min-height: 60%;
+}
+
+.img3 {
+  background: url("./assets/sample-img3.png");
+  min-height: 100%;
+}
+
+.img1, .img2, .img3 {
+  position: relative;
+  opacity: 0.85;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }/*# sourceMappingURL=index.css.map */
