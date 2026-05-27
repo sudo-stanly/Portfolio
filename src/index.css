@@ -55,7 +55,6 @@ main .hero {
   position: relative;
   top: 0;
   height: 100vh;
-  border: 1px solid black;
   display: flex;
   width: 100%;
   overflow: hidden;
@@ -167,6 +166,33 @@ main .hero .CARD img {
   width: 100%;
   height: auto;
 }
+main .divider-1 {
+  background: url("./assets/polygon-background.jpg");
+  min-height: 20%;
+}
+main .divider-2 {
+  background: url("./assets/polygon-background.jpg");
+  min-height: 20%;
+}
+main .divider-3 {
+  background: url("./assets/polygon-background.jpg");
+  min-height: 20%;
+}
+main .divider-4 {
+  background: url("./assets/polygon-background.jpg");
+  min-height: 20%;
+}
+main .divider-1, main .divider-2, main .divider-3, main .divider-4 {
+  position: relative;
+  opacity: 0.85;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+main section {
+  padding: 50px 80px;
+}
 
 @keyframes fade_in {
   from {
@@ -204,19 +230,6 @@ main .hero .CARD img {
     width: 0;
   }
 }
-@media (max-width: 1023px) {
-  main .hero .BOX {
-    width: 100%;
-  }
-  main .hero .CARD {
-    visibility: hidden;
-  }
-}
-@media (max-width: 768px) {
-  main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) {
-    padding-top: 0px;
-  }
-}
 @media (max-width: 500px) {
   main .hero .BOX .card:nth-child(1) {
     padding: 8px;
@@ -252,5 +265,18 @@ main .hero .CARD img {
   }
   main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container p, main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container span {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 1023px) {
+  main .hero .BOX {
+    width: 100%;
+  }
+  main .hero .CARD {
+    visibility: hidden;
+  }
+}
+@media (max-width: 768px) {
+  main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) {
+    padding-top: 0px;
   }
 }/*# sourceMappingURL=index.css.map */

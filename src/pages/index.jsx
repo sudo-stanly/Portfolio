@@ -1,4 +1,5 @@
 import stanImg from '../assets/stan.png';
+import dividerImg from '../assets/polygon-background.jpg';
 
 export default function IndexPage(){
     return(<>
@@ -105,11 +106,43 @@ export default function IndexPage(){
                     </div>
             </div>
 
-            <div className="divider"></div>
+            <div className="divider-1">
+                <div className="heading">
+                    Technical Skills
+                </div>
+            </div>
             <section>
-                section
+                content
 
-                
+            </section>
+
+            <div className="divider-2">
+                <div className="heading">
+                    Projects
+                </div>
+            </div>
+            <section>
+                content
+
+            </section>
+
+            <div className="divider-3">
+                <div className="heading">
+                    Events
+                </div>
+            </div>
+            <section>
+                content
+
+            </section>
+
+            <div className="divider-4">
+                <div className="heading">
+                    Certificates
+                </div>
+            </div>
+            <section>
+                content
 
             </section>
 
