@@ -128,7 +128,6 @@ main .hero .BOX .card:nth-child(2) .card-content:nth-child(1) .COUNTER .COUNTER-
 }
 main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) {
   flex-grow: 1;
-  flex-direction: column;
   display: inline-block;
 }
 main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .heading-container {
@@ -144,6 +143,12 @@ main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .heading-container
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s, cursor 0.4s step-end infinite alternate;
+}
+main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container {
+  width: 80%;
+}
+main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container p, main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container span {
+  font-size: 1.5rem;
 }
 main .hero .CARD {
   animation: fade_in 0.5s ease-in;
@@ -221,12 +226,18 @@ main .hero .CARD img {
     padding-right: 0px;
   }
   main .hero .BOX .card:nth-child(2) .card-content:nth-child(1) .COUNTER .COUNTER-CONTENT p .count-symbol {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   main .hero .BOX .card:nth-child(2) .card-content:nth-child(1) .COUNTER .COUNTER-CONTENT p .count-heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   main .hero .BOX .card:nth-child(2) .card-content:nth-child(1) .COUNTER .COUNTER-CONTENT p .count-subtext {
     font-size: 0.8rem;
+  }
+  main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .heading-container .text {
+    font-size: 3rem;
+  }
+  main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container p, main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container span {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=index.css.map */

@@ -41,13 +41,15 @@ export default function IndexPage(){
         <main>
             <div className="hero">
                     <div className="BOX">
+
                         <div className="card">
-                            <div className="box"><p><span>IT</span></p></div>
+                            <div className="box"><p><span>STAN</span></p></div>
                             <div className="box">
                                 <div className="slider"></div>
                             </div>
                             <div className="box"><p><span>2026</span></p></div>
                         </div>
+
                         <div className="card">
                            
                             <div className="card-content">
@@ -78,10 +80,24 @@ export default function IndexPage(){
                                 <div className="heading-container">
                                     <p className="text">Hello.</p>
                                 </div>
+                                
+
+                                <div className="subtext-container">
+                                    <p>
+                                        <span>
+                                            I’m Stanley Alerta a Programmer & Backend Developer from Albay, Legazpi City. Alongside 
+                                            building robust server-side applications, I have a strong interest in Linux, networking, 
+                                            and security. Outside of tech, I’m into sports, working out,and value 
+                                            spending time with myself to recharge always balancing hands-on project 
+                                            development with a focused, active lifestyle.
+                                        </span>
+                                    </p>
+                                </div>
 
                             </div>
 
                         </div>
+
                     </div>
 
                     <div className="CARD">
