@@ -32,13 +32,13 @@
 }
 
 
+
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
-    font-family: Inter;
-    font-weight: 500;
     box-sizing: border-box;
-    font-family: "istokweb-regular","Inter";
+    // font-family: "istokweb-regular","Inter";
 }
 html, body, #root{
     // min-height: 100%;
@@ -76,8 +76,60 @@ main {
 
         overflow: hidden;
 
+        .BOX{
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            height: 100%;
+            width: 70%;
+
+            border: 1px solid red;
+
+            display: flex;
+            padding: 12px;
+
+            .card{
+                border: 1px solid red;
+
+                &:nth-child(1){
+                    padding: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+
+                    .box{
+                        border: 1px solid red;
+
+                        &:nth-child(1), &:nth-child(3){
+                            
+                            p{
+                                font-size: 1.5rem;
+                                transform: rotate(90deg);
+
+                                font-family: "Inter";
+                                font-weight: 800;
+                                // font-weight: 500;
+                                color: red;
+                            }
+                        }
+
+                        &:nth-child(2){
+                            animation: slider 1s ease-in-out;
+                            height: 80%;
+                            padding: 4px;
+                        }
+                    }
+                }
+
+                &:nth-child(2){
+                    flex-grow: 1;
+                }
+            }
+        }
+
         .CARD{
-            animation: slide_up 0.5s ease-in;
+            animation: fade_in 0.5s ease-in;
 
 
             position: absolute;
@@ -92,7 +144,7 @@ main {
 
             width: 900px;
             transform: translateY(180px);
-            transition: 0.3s ease;
+            // transition: 0.3s ease;
             
             img{
                 
@@ -102,13 +154,23 @@ main {
         }
     }
 }
-@keyframes slide_up{
+@keyframes fade_in{
     from{
-        transform: translateY(100%);
+        // transform: translateY(100%);
+        opacity: 0%;
+    }
+    to{
+        // transform: translateY(180px);
+        opacity: 100%;
+    }
+}
+@keyframes slider{
+    from{
+        height: 10%;
         opacity: 30%;
     }
     to{
-        transform: translateY(180px);
+        height: 80%;
         opacity: 100%;
     }
 }
@@ -118,11 +180,15 @@ main {
 @media(max-width: 1023px){
     main{
         .hero{
+            .BOX{
+                width: 100%;
+            }
+
             .CARD{
                 // visibility: hidden;
                 // transform: translateY(100%);
 
-                opacity: 0;
+                visibility: hidden;
             }
         }
     }

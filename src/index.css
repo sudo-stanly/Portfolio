@@ -31,10 +31,7 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  font-family: Inter;
-  font-weight: 500;
   box-sizing: border-box;
-  font-family: "istokweb-regular", "Inter";
 }
 
 html, body, #root {
@@ -62,32 +59,79 @@ main .hero {
   width: 100%;
   overflow: hidden;
 }
+main .hero .BOX {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 70%;
+  border: 1px solid red;
+  display: flex;
+  padding: 12px;
+}
+main .hero .BOX .card {
+  border: 1px solid red;
+}
+main .hero .BOX .card:nth-child(1) {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .hero .BOX .card:nth-child(1) .box {
+  border: 1px solid red;
+}
+main .hero .BOX .card:nth-child(1) .box:nth-child(1) p, main .hero .BOX .card:nth-child(1) .box:nth-child(3) p {
+  font-size: 1.5rem;
+  transform: rotate(90deg);
+  font-family: "Inter";
+  font-weight: 800;
+  color: red;
+}
+main .hero .BOX .card:nth-child(1) .box:nth-child(2) {
+  animation: slider 1s ease-in-out;
+  height: 80%;
+  padding: 4px;
+}
+main .hero .BOX .card:nth-child(2) {
+  flex-grow: 1;
+}
 main .hero .CARD {
-  animation: slide_up 0.5s ease-in;
+  animation: fade_in 0.5s ease-in;
   position: absolute;
   right: 0;
   bottom: 0;
   width: 900px;
   transform: translateY(180px);
-  transition: 0.3s ease;
 }
 main .hero .CARD img {
   width: 100%;
   height: auto;
 }
 
-@keyframes slide_up {
+@keyframes fade_in {
   from {
-    transform: translateY(100%);
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@keyframes slider {
+  from {
+    height: 10%;
     opacity: 30%;
   }
   to {
-    transform: translateY(180px);
+    height: 80%;
     opacity: 100%;
   }
 }
 @media (max-width: 1023px) {
+  main .hero .BOX {
+    width: 100%;
+  }
   main .hero .CARD {
-    opacity: 0;
+    visibility: hidden;
   }
 }/*# sourceMappingURL=index.css.map */

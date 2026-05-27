@@ -41,7 +41,14 @@ export default function IndexPage(){
         <main>
             <div className="hero">
                     <div className="BOX">
-                        
+                        <div className="card">
+                            <div className="box"><p><span>IT</span></p></div>
+                            <div className="box">2</div>
+                            <div className="box"><p><span>2026</span></p></div>
+                        </div>
+                        <div className="card">
+                            card 2
+                        </div>
                     </div>
 
                     <div className="CARD">
