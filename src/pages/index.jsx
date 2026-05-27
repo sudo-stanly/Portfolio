@@ -49,7 +49,34 @@ export default function IndexPage(){
                             <div className="box"><p><span>2026</span></p></div>
                         </div>
                         <div className="card">
-                            ...
+                           
+                            <div className="card-content">
+
+                                <div className="COUNTER">
+                                    <div className="COUNTER-CONTENT">
+                                        <p><span className="count-symbol">+</span></p>
+                                    </div>
+                                    <div className="COUNTER-CONTENT">
+                                        <p><span className="count-heading">0</span></p>
+                                        <p><span className="count-subtext">Projects Completed</span></p>
+                                    </div>
+                                </div>
+                                <div className="COUNTER">
+                                    <div className="COUNTER-CONTENT">
+                                        <p><span className="count-symbol">+</span></p>
+                                    </div>
+                                    <div className="COUNTER-CONTENT">
+                                        <p><span className="count-heading">0</span></p>
+                                        <p><span className="count-subtext">Certificates</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div className="card-content">
+                                Intro
+                            </div>
+
                         </div>
                     </div>
 

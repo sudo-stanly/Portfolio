@@ -12,7 +12,6 @@
     --warning: #F8C537; 
     --error: #ED254E;
 
-
     --shadow: 0px 2px 6px 0px rgba(136, 136, 136, 0.331);
 }
 
@@ -40,20 +39,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: "istokweb-regular","Inter";
+
+    text-align: justify;
+    word-break: break-all;
 }
 html, body, #root{
-    // min-height: 100%;
-    // min-height: 100dvh;
     height: 100%;
     height: 100dvh;
-
-    // overflow: hidden;
-
-    // line-height: 180%;
-    // background-color: #323232;
-    // color: #fff;
-    // text-align: center;
 }
     body, #root{
         display: flex;
@@ -85,23 +77,21 @@ main {
             height: 100%;
             width: 70%;
 
-            border: 1px solid red;
+            // border: 1px solid red;
 
             display: flex;
             padding: 12px;
 
             .card{
-                border: 1px solid red;
+                // border: 1px solid red;
 
                 &:nth-child(1){
                     padding: 8px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    gap: 10px;
+                    gap: 1rem;
                     
-
-
                     .box{
                         // border: 1px solid red;
 
@@ -110,25 +100,23 @@ main {
                             justify-content: center;
                             
                             p{
+                                animation: fade_text 1.5s ease-in-out;
                                 font-size: 1.5rem;
-                                // transform: rotate(90deg);
 
                                 font-family: "Inter";
                                 font-weight: 500;
-                                // font-weight: 500;
                                 color: var(--text-primary);
                             }
                         }
 
                         &:nth-child(2){
-                            animation: slider 1s ease-in-out;
+                            animation: slider 1.5s ease-in-out;
                             height: 85%;
-                            // padding: 4px;
                             display: flex;
                             justify-content: center;
 
                             .slider{
-                                padding: 3px;
+                                padding: 2px;
                                 border-radius: 100px;
                                 background-color: var(--text-primary);
                             }
@@ -138,6 +126,53 @@ main {
 
                 &:nth-child(2){
                     flex-grow: 1;
+                    padding: 70px 0px 70px;
+
+                    border: 1px solid red;
+
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    
+                    .card-content{
+                        border: 1px solid red;
+                        padding-left: 30px;
+                        padding-right: 30px;
+
+                        &:nth-child(1){
+                            display: flex;
+                            gap: 1rem;
+
+                            p{
+                                font-size: 3rem;
+                            }
+
+                            .COUNTER{
+                                display: flex;
+
+                                // border: 1px solid red;
+
+                                .COUNTER-CONTENT{
+                                    // border: 1px solid red;
+
+                                    p{
+                                        .count-heading{
+                                            font-family: "Inter";
+                                        }
+                                        .count-subtext{
+                                            font-size: 1.5rem;
+                                            font-family: "Inter";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-child(2){
+                            flex-grow: 1;
+                        }
+                    }
+
                 }
             }
         }
@@ -150,18 +185,10 @@ main {
             right: 0;
             bottom: 0;
 
-            // border: 1px solid blue;
-
-            // width: 100%;
-
-            // position: relative;
-
             width: 900px;
             transform: translateY(180px);
-            // transition: 0.3s ease;
             
             img{
-                
                 width: 100%;
                 height: auto;
             }
@@ -170,21 +197,27 @@ main {
 }
 @keyframes fade_in{
     from{
-        // transform: translateY(100%);
         opacity: 0%;
     }
     to{
-        // transform: translateY(180px);
         opacity: 100%;
     }
 }
 @keyframes slider{
     from{
-        height: 10%;
-        opacity: 30%;
+        height: 0%;
+        opacity: 20%;
     }
     to{
         height: 85%;
+        opacity: 100%;
+    }
+}
+@keyframes fade_text{
+    from{
+        opacity: 20%;
+    }
+    to{
         opacity: 100%;
     }
 }
@@ -199,14 +232,80 @@ main {
             }
 
             .CARD{
-                // visibility: hidden;
-                // transform: translateY(100%);
-
                 visibility: hidden;
             }
         }
     }
 }
+
+@media(max-width: 500px){
+    main{
+        .hero{
+            .BOX{
+                .card{
+
+                    &:nth-child(1){
+                        padding: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 10px;
+                        
+                        .box{
+                            // border: 1px solid red;
+
+                            &:nth-child(1), &:nth-child(3){
+                                p{
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            &:nth-child(2){
+                                .slider{
+                                    padding: 1px;
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(2){
+                        .card-content{
+                            padding-left: 20px;
+                            padding-right: 0px;
+
+                            &:nth-child(1){
+                                // p{
+                                //     transition: 0.3s ease-in-out;
+                                //     font-size: 1.5rem;
+                                // }
+
+                                .COUNTER{
+                                    .COUNTER-CONTENT{
+                                        p{
+                                            .count-symbol{
+                                                font-size: 1rem;
+                                            }
+                                            .count-heading{
+                                                font-size: 1.5rem;
+                                            }
+                                            .count-subtext{
+                                                font-size: 0.8rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
 // @keyframes fade_out{
 //     from{
 //         opacity: 0;
