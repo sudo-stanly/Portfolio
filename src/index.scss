@@ -98,28 +98,40 @@ main {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    gap: 10px;
+                    
 
 
                     .box{
                         // border: 1px solid red;
 
                         &:nth-child(1), &:nth-child(3){
+                            display: flex;
+                            justify-content: center;
                             
                             p{
                                 font-size: 1.5rem;
-                                transform: rotate(90deg);
+                                // transform: rotate(90deg);
 
                                 font-family: "Inter";
                                 font-weight: 500;
                                 // font-weight: 500;
-                                // color: red;
+                                color: var(--text-primary);
                             }
                         }
 
                         &:nth-child(2){
                             animation: slider 1s ease-in-out;
-                            height: 80%;
-                            padding: 4px;
+                            height: 85%;
+                            // padding: 4px;
+                            display: flex;
+                            justify-content: center;
+
+                            .slider{
+                                padding: 3px;
+                                border-radius: 100px;
+                                background-color: var(--text-primary);
+                            }
                         }
                     }
                 }
@@ -172,7 +184,7 @@ main {
         opacity: 30%;
     }
     to{
-        height: 80%;
+        height: 85%;
         opacity: 100%;
     }
 }
