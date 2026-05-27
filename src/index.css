@@ -1,13 +1,12 @@
 :root {
-  --primary-color: #FFFFFF;
-  --secondary-color: #d23331;
+  --bg-primary:#FFFFFF;
+  --bg-secondary: #151414;
+  --text-primary: #A7A7A7;
+  --text-secondary: #121212;
+  --text-tertiary: #EF3054;
   --success: #0CCE6B;
   --warning: #F8C537;
   --error: #ED254E;
-  --light-grey: #312F2F;
-  --mid-grey: #22181C;
-  --dark-grey: #0C0C0C;
-  --dark: #000000;
   --shadow: 0px 2px 6px 0px rgba(136, 136, 136, 0.331);
 }
 
@@ -78,15 +77,11 @@ main .hero .BOX .card:nth-child(1) {
   flex-direction: column;
   justify-content: center;
 }
-main .hero .BOX .card:nth-child(1) .box {
-  border: 1px solid red;
-}
 main .hero .BOX .card:nth-child(1) .box:nth-child(1) p, main .hero .BOX .card:nth-child(1) .box:nth-child(3) p {
   font-size: 1.5rem;
   transform: rotate(90deg);
   font-family: "Inter";
-  font-weight: 800;
-  color: red;
+  font-weight: 500;
 }
 main .hero .BOX .card:nth-child(1) .box:nth-child(2) {
   animation: slider 1s ease-in-out;
