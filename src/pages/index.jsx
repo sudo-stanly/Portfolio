@@ -77,12 +77,12 @@ export default function IndexPage(){
 
                             <div className="card-content">
                                 
-                                <div className="heading-container">
+                                <div className="heading-container content-container">
                                     <p className="text">Hello.</p>
                                 </div>
                                 
 
-                                <div className="subtext-container">
+                                <div className="subtext-container content-container">
                                     <p>
                                         <span>
                                             I’m Stanley Alerta a Programmer & Backend Developer from Albay, Legazpi City. Alongside 

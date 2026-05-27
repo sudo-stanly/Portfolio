@@ -127,6 +127,7 @@ main .hero .BOX .card:nth-child(2) .card-content:nth-child(1) .COUNTER .COUNTER-
   font-family: "Inter";
 }
 main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) {
+  padding-top: 200px;
   flex-grow: 1;
   display: inline-block;
 }
@@ -145,10 +146,14 @@ main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .heading-container
   animation: typing 2s, cursor 0.4s step-end infinite alternate;
 }
 main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container {
-  width: 80%;
+  width: 85%;
 }
 main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container p, main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container span {
+  text-align: left;
+  word-break: normal;
+  overflow-wrap: break-word;
   font-size: 1.5rem;
+  font-family: "Istok Web";
 }
 main .hero .CARD {
   animation: fade_in 0.5s ease-in;
@@ -207,6 +212,11 @@ main .hero .CARD img {
     visibility: hidden;
   }
 }
+@media (max-width: 768px) {
+  main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) {
+    padding-top: 0px;
+  }
+}
 @media (max-width: 500px) {
   main .hero .BOX .card:nth-child(1) {
     padding: 8px;
@@ -237,7 +247,10 @@ main .hero .CARD img {
   main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .heading-container .text {
     font-size: 3rem;
   }
+  main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container {
+    width: 90%;
+  }
   main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container p, main .hero .BOX .card:nth-child(2) .card-content:nth-child(2) .subtext-container span {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=index.css.map */
