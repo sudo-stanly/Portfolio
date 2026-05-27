@@ -74,7 +74,11 @@ export default function IndexPage(){
                             </div>
 
                             <div className="card-content">
-                                Intro
+                                
+                                <div className="heading-container">
+                                    <p className="text">Hello.</p>
+                                </div>
+
                             </div>
 
                         </div>
